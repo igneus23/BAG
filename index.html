@@ -7,38 +7,84 @@
     <style>
         body {
             background-color: black;
-            color: #80ff80;
+            color: green;
             font-family: Arial, sans-serif;
-            text-align: center;
         }
+
         h1 {
-            color: #66ff66;
-            font-size: 2.5em;
+            text-align: center;
+            font-size: 3em;
         }
-        h2 {
-            color: #33cc33;
-            font-size: 1.8em;
-        }
+
         .container {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
+            justify-content: space-around;
             margin-top: 20px;
         }
-        .container img {
+
+        .box {
             width: 30%;
+            background-color: #222;
+            padding: 15px;
+            margin: 10px;
             border-radius: 10px;
+        }
+
+        .box h2 {
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .images {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .images img {
+            width: 45%;
+            margin: 5px;
+            border-radius: 8px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <h1>BIG APPLE GYM</h1>
-    <h2>Reglas - Reglamento - Entrenadores</h2>
+    <h1>Big Apple Gym</h1>
+    <p class="footer">Olaa altas</p>
+
     <div class="container">
-        <img src="img1.jpg" alt="Reglas">
-        <img src="img2.jpg" alt="Reglamento">
-        <img src="img3.jpg" alt="Entrenadores">
+        <!-- Primer cuadro: Gimnasio -->
+        <div class="box">
+            <h2>Gimnasio</h2>
+            <div class="images">
+                <img src="img10.jpg" alt="Precios en inglés">
+                <img src="img11.jpg" alt="Precios en español">
+                <img src="img13.jpg" alt="Reglamento">
+            </div>
+        </div>
+
+        <!-- Segundo cuadro: Crossfit -->
+        <div class="box">
+            <h2>Crossfit</h2>
+            <div class="images">
+                <img src="img14.jpg" alt="Horario Crossfit">
+                <img src="img15.jpg" alt="Entrenadores Crossfit">
+            </div>
+        </div>
+
+        <!-- Tercer cuadro: Spinning -->
+        <div class="box">
+            <h2>Spinning</h2>
+            <div class="images">
+                <img src="img16.png" alt="Horario español Spinning">
+                <img src="img17.png" alt="Horario inglés Spinning">
+            </div>
+        </div>
     </div>
 </body>
 </html>
